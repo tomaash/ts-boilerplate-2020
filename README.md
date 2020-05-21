@@ -1,3 +1,1 @@
-## openfleet-ui-order-tracking-v2
-
-# openFleet orderTracking V2.
+# ts-boilerplate-2020
