@@ -34,6 +34,7 @@ https://marketplace.visualstudio.com/items?itemName=mhmadhamster.postcss-languag
   color: #61dafb;
 }
 
+/* postcss nesting syntax here: */
 .par {
   & .nest {
     color: magenta;
