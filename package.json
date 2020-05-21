@@ -15,11 +15,16 @@
     "craco-alias": "^2.1.1",
     "craco-antd": "^1.14.1",
     "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "tailwindcss": "^1.4.6",
     "typescript": "~3.7.2"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "pretty-quick": "^2.0.1"
   },
   "scripts": {
     "start": "craco start",
@@ -29,6 +34,18 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,css}": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ]
   },
   "browserslist": {
     "production": [
