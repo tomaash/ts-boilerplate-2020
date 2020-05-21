@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "~/logo.svg";
 import "~/App.css";
+import "~/stuff.less";
 import { Button } from "antd";
 import { Thing } from "~/components/thing";
 
@@ -12,6 +13,7 @@ function App() {
         <p className="text-purple-500 par">
           Edit <code>src/App.tsx</code> and save to reload.
           <p className="nest">xxx</p>
+          <p className="nest2">yyy</p>
         </p>
         <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
