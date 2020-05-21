@@ -1,12 +1,13 @@
 const CracoAlias = require("craco-alias");
 const tailwindcss = require("tailwindcss");
+const presetEnv = require("postcss-preset-env");
 const CracoAntDesignPlugin = require("craco-antd");
 
 module.exports = {
   style: {
     postcss: {
       mode: "extends" /* (default value) */ || "file",
-      plugins: [tailwindcss("./tailwind.config.js")],
+      plugins: [tailwindcss("./tailwind.config.js"), presetEnv({ stage: 0 })],
     },
   },
   plugins: [
